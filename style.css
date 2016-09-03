@@ -1,146 +1,159 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html {
     background-color: black;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     font-family: Open Sans, sans-serif;
 }
 
 body {
-    height:1000px;
+    height: 1000px;
+    width: 600px;
+    margin: 0 auto;
 }
 
 .content {
     background-color: white;
-    width:500px;
-    height:800px;
+    width: 500px;
     margin-left: 10%;
     margin-right: 40;
-    float:left;
+    float: left;
+
 
 }
 
 ul {
-    list-style: none;
+    list-style: block;
     padding: 0;
 }
-li {
 
-    width:200px;
+li {
+    width: 130px;
     background-color: #97d779;
     color: white;
     list-style-type: none;
-    margin-left: 30%;
-    margin-right:30%;
     padding-left: none;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     line-height: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    float:left;
+    margin-left: 24px;
+
 }
-li:hover{
-    background-color:#69b148;
-    color:white;
+
+li:hover {
+    background-color: #69b148;
+    color: white;
 }
 
 h1 {
     text-align: center;
     font-size: 35px;
+    background-color: #346ae2;
+    line-height: 100px;
+    color:white;
 }
 
 a {
     text-decoration: none;
     display: inline-block;
-    color:white;
+    color: white;
     width: 100%;
 }
 
 .spinBtn {
-    background-color:blue;
+    background: -webkit-linear-gradient(top, #4988ff 0%,#4988ff 50%,#2162dd 51%,#2162dd 100%);
+}
+
+.spinBtn:hover{
+    background: -webkit-linear-gradient(top, #2560d0 0%,#2560d0 50%,#0740ac 51%,#0740ac 100%);
 }
 
 .spin180 {
-    background-color:red;
+    background-color: red;
 }
-
 
 .spinSlow {
-    background-color:purple;
+    background-color: purple;
 }
-
 
 .floating {
-    background-color:teal;
+    background-color: teal;
 }
-
 
 .boxTester {
     width: 200px;
     height: 200px;
-    float:left;
+    float: left;
     margin-left: 20%;
-    margin-top:15%;
+    margin-top: 15%;
     background-color: aqua;
     text-align: center;
     line-height: 200px;
     font-size: 50px;
-    color:white;
+    color: white;
 }
 
 .iconTester {
     background-image: url(icon.png);
     width: 370px;
     height: 370px;
-    float:left;
+    float: left;
     margin-left: 20%;
-    margin-top:15%;
+    margin-top: 15%;
+    margin-bottom: 10%;
 }
 
 h2 {
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 @keyframes spin360 {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes spin180 {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(180deg);}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 @keyframes spinSlow {
     0% {
-		transform: rotate(0deg);
-	}
-	25% {
-		transform: rotate(90deg);
-	}
-	50% {
-		transform: rotate(180deg);
-	}
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
     75% {
-		transform: rotate(270deg);
-	}
+        transform: rotate(270deg);
+    }
     100% {
-		transform: rotate(360deg);
-	}
+        transform: rotate(360deg);
+    }
 }
-
-
 
 @keyframes floating {
-	0% {
-		transform: translateY(0%);
-	}
-	50% {
-		transform: translateY(12%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(12%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
-
-
-

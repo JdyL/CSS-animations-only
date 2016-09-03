@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html {
+    background-color: black;
+    width:100%;
+    height:100%;
+    font-family: Open Sans, sans-serif;
+}
+
+body {
+    height:1000px;
+}
+
+.content {
+    background-color: white;
+    width:500px;
+    height:800px;
+    margin-left: 10%;
+    margin-right: 40;
+    float:left;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+
+    width:200px;
+    background-color: #97d779;
+    color: white;
+    list-style-type: none;
+    margin-left: 30%;
+    margin-right:30%;
+    padding-left: none;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+li:hover{
+    background-color:#69b148;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    width: 100%;
+}
+
+.spinBtn {
+    background-color:blue;
+}
+
+.spin180 {
+    background-color:red;
+}
+
+
+.spinSlow {
+    background-color:purple;
+}
+
+
+.floating {
+    background-color:teal;
+}
+
+
+.boxTester {
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin-left: 20%;
+    margin-top:15%;
+    background-color: aqua;
+}
+
+@keyframes spin360 {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes spin180 {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
+@keyframes spinSlow {
+    0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(12%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+

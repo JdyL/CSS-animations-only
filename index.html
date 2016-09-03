@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This site shows different CSS Animations">
+    <meta name="author" content="JdyL">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <title>CSS Only Animation Types</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="content">
+
+
+        <h1>CSS Only Animation Types</h1>
+
+        <ul>
+            <li class="spinBtn"><a href="#">Spin 360</a></li>
+            <li class="spin180"><a href="#">Spin 180</a></li>
+            <li class="spinSlow"><a href="#">Spin Flips</a></li>
+            <li class="floating"><a href="#">Float</a></li>
+        </ul>
+
+
+
+    </div>
+
+
+    <div class="boxTester"></div>
+    <button id="hide">Hide</button>
+
+</body>
+<script>
+    $(document).ready(function () {
+
+        $(".spinBtn").click(function(){
+        $(".boxTester").css({"animation-name":"spin360", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
+    });
+
+        $(".spin180").click(function(){
+        $(".boxTester").css({"animation-name":"spin180", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
+    });
+
+        $(".spinSlow").click(function(){
+        $(".boxTester").css({"animation-name":"spinSlow", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
+    });
+
+        $(".floating").click(function(){
+        $(".boxTester").css({"animation-name":"floating", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
+    });
+
+    });
+</script>
+
+</html>

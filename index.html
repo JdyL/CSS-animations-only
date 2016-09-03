@@ -20,6 +20,8 @@
 
         <h1>CSS Only Animation Types</h1>
 
+        <h2>Useful Loading Animations</h2>
+
         <ul>
             <li class="spinBtn"><a href="#">Spin 360</a></li>
             <li class="spin180"><a href="#">Spin 180</a></li>
@@ -32,28 +34,28 @@
     </div>
 
 
-    <div class="boxTester">Test</div>
+    <div class="iconTester">Test</div>
 </body>
 <script>
     $(document).ready(function () {
 
         $(".spinBtn").click(function(){
-        $(".boxTester").css({"animation-name":"spin360", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite", "background-color":"blue"});
+        $(".iconTester").css({"animation-name":"spin360", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
             $(".boxTester").text( "360" );
     });
 
         $(".spin180").click(function(){
-        $(".boxTester").css({"animation-name":"spin180", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite", "background-color":"red"});
+        $(".iconTester").css({"animation-name":"spin180", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
             $(".boxTester").text( "180" );
     });
 
         $(".spinSlow").click(function(){
-        $(".boxTester").css({"animation-name":"spinSlow", "animation-duration":"2000ms", "animation-iteration-count":"infinite", "background-color":"purple"});
+        $(".iconTester").css({"animation-name":"spinSlow", "animation-duration":"2000ms", "animation-iteration-count":"infinite"});
             $(".boxTester").text( "Flips" );
     });
 
         $(".floating").click(function(){
-        $(".boxTester").css({"animation-name":"floating", "animation-duration":"2000ms", "animation-iteration-count":"infinite", "background-color":"teal"});
+        $(".iconTester").css({"animation-name":"floating", "animation-duration":"2000ms", "animation-iteration-count":"infinite"});
             $(".boxTester").text( "Float" );
     });
 

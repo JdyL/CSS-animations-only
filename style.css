@@ -81,6 +81,13 @@ a {
     margin-left: 20%;
     margin-top:15%;
     background-color: aqua;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+}
+
+h2{
+
 }
 
 @keyframes spin360 {
@@ -97,11 +104,17 @@ a {
     0% {
 		transform: rotate(0deg);
 	}
-	50% {
+	25% {
 		transform: rotate(90deg);
 	}
-	100% {
+	50% {
 		transform: rotate(180deg);
+	}
+    75% {
+		transform: rotate(270deg);
+	}
+    100% {
+		transform: rotate(360deg);
 	}
 }
 

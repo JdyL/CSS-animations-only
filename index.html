@@ -32,25 +32,29 @@
     </div>
 
 
-    <div class="boxTester"></div>
+    <div class="boxTester">Test</div>
 </body>
 <script>
     $(document).ready(function () {
 
         $(".spinBtn").click(function(){
-        $(".boxTester").css({"animation-name":"spin360", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
+        $(".boxTester").css({"animation-name":"spin360", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite", "background-color":"blue"});
+            $(".boxTester").text( "360" );
     });
 
         $(".spin180").click(function(){
-        $(".boxTester").css({"animation-name":"spin180", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
+        $(".boxTester").css({"animation-name":"spin180", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite", "background-color":"red"});
+            $(".boxTester").text( "180" );
     });
 
         $(".spinSlow").click(function(){
-        $(".boxTester").css({"animation-name":"spinSlow", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
+        $(".boxTester").css({"animation-name":"spinSlow", "animation-duration":"2000ms", "animation-iteration-count":"infinite", "background-color":"purple"});
+            $(".boxTester").text( "Flips" );
     });
 
         $(".floating").click(function(){
-        $(".boxTester").css({"animation-name":"floating", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
+        $(".boxTester").css({"animation-name":"floating", "animation-duration":"2000ms", "animation-iteration-count":"infinite", "background-color":"teal"});
+            $(".boxTester").text( "Float" );
     });
 
     });

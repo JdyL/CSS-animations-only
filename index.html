@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,56 +8,63 @@
     <!--CSS-->
     <link href="style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <title>CSS Only Animation Types</title>
-
-
 </head>
 
 <body>
     <div class="iconTester"></div>
 
     <div class="content">
-
-
         <h1>CSS Only Animation Types</h1>
-
         <ul>
             <li class="spinBtn"><a href="#">Spin 360</a></li>
             <li class="spin180"><a href="#">Spin 180</a></li>
             <li class="spinSlow"><a href="#">Spin Flips</a></li>
             <li class="floating"><a href="#">Float</a></li>
         </ul>
-
-
-
     </div>
-
-
-
 </body>
 <script>
     $(document).ready(function () {
 
-        $(".spinBtn").click(function(){
-        $(".iconTester").css({"animation-name":"spin360", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
-            $(".boxTester").text( "360" );
-    });
 
-        $(".spin180").click(function(){
-        $(".iconTester").css({"animation-name":"spin180", "animation-duration":"2000ms", "animation-delay":"1000ms", "animation-iteration-count":"infinite"});
-            $(".boxTester").text( "180" );
-    });
+        $(".spinBtn").click(function () {
+            $(".iconTester").css({
+                "animation-name": "spin360",
+                "animation-duration": "2000ms",
+                "animation-delay": "1000ms",
+                "animation-iteration-count": "infinite"
+            });
+            $(".boxTester").text("360");
+        });
 
-        $(".spinSlow").click(function(){
-        $(".iconTester").css({"animation-name":"spinSlow", "animation-duration":"2000ms", "animation-iteration-count":"infinite"});
-            $(".boxTester").text( "Flips" );
-    });
+        $(".spin180").click(function () {
+            $(".iconTester").css({
+                "animation-name": "spin180",
+                "animation-duration": "2000ms",
+                "animation-delay": "1000ms",
+                "animation-iteration-count": "infinite"
+            });
+            $(".boxTester").text("180");
+        });
 
-        $(".floating").click(function(){
-        $(".iconTester").css({"animation-name":"floating", "animation-duration":"2000ms", "animation-iteration-count":"infinite"});
-            $(".boxTester").text( "Float" );
-    });
+        $(".spinSlow").click(function () {
+            $(".iconTester").css({
+                "animation-name": "spinSlow",
+                "animation-duration": "2000ms",
+                "animation-iteration-count": "infinite"
+            });
+            $(".boxTester").text("Flips");
+        });
+
+        $(".floating").click(function () {
+            $(".iconTester").css({
+                "animation-name": "floating",
+                "animation-duration": "2000ms",
+                "animation-iteration-count": "infinite"
+            });
+            $(".boxTester").text("Float");
+        });
 
     });
 </script>

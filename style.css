@@ -7,8 +7,9 @@ html {
 }
 
 body {
-    height: 1000px;
+    height: 900px;
     width: 600px;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -19,8 +20,6 @@ body {
     margin-left: 10%;
     margin-right: 40;
     float: left;
-
-
 }
 
 ul {
@@ -39,9 +38,8 @@ li {
     line-height: 50px;
     margin-bottom: 10px;
     border-radius: 7px;
-    float:left;
+    float: left;
     margin-left: 24px;
-
 }
 
 li:hover {
@@ -54,7 +52,7 @@ h1 {
     font-size: 35px;
     background-color: #346ae2;
     line-height: 100px;
-    color:white;
+    color: white;
 }
 
 a {
@@ -65,15 +63,19 @@ a {
 }
 
 .spinBtn {
-    background: -webkit-linear-gradient(top, #4988ff 0%,#4988ff 50%,#2162dd 51%,#2162dd 100%);
+    background: -webkit-linear-gradient(top, #4988ff 0%, #4988ff 50%, #2162dd 51%, #2162dd 100%);
 }
 
-.spinBtn:hover{
-    background: -webkit-linear-gradient(top, #2560d0 0%,#2560d0 50%,#0740ac 51%,#0740ac 100%);
+.spinBtn:hover {
+    background: -webkit-linear-gradient(top, #2560d0 0%, #2560d0 50%, #0740ac 51%, #0740ac 100%);
 }
 
 .spin180 {
-    background-color: red;
+    background: -webkit-linear-gradient(top, #ff7878 0%, #ff7878 50%, #db2c2c 51%, #db2c2c 100%);
+}
+
+.spin180:hover{
+    background: -webkit-linear-gradient(top, #ef4b4b 0%, #ef4b4b 50%, #ba1616 51%, #ba1616 100%);
 }
 
 .spinSlow {

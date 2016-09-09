@@ -163,7 +163,7 @@ h2 {
 
 @keyframes jump {
     from {
-        transform: translateY(0%);
+        transform: translateY(1%);
     }
     to {
         transform: translateY(20%);
